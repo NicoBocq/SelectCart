@@ -1,0 +1,174 @@
+{
+  "name": "CHAUSSURES DE RUNNING BROOKS RUNNING GLYCERIN 19 BLEU / JAUNE",
+  "price": 170.00,
+  "images": [
+    {
+      "id": 1,
+      "imageSrc": "https://media.alltricks.com/hd/18891825fe253a9ded875.56031014.jpg",
+      "imageAlt": "CHAUSSURES DE RUNNING BROOKS RUNNING",
+      "primary": true
+    },
+    {
+      "id": 2,
+      "imageSrc": "https://media.alltricks.com/hd/18891825fe2538f2497d1.06306980.jpg",
+      "imageAlt": "CHAUSSURES DE RUNNING BROOKS RUNNING",
+      "primary": false
+    },
+    {
+      "id": 3,
+      "imageSrc": "https://media.alltricks.com/hd/18891825fe25389dbe913.14566111.jpg",
+      "imageAlt": "CHAUSSURES DE RUNNING BROOKS RUNNING",
+      "primary": false
+    }
+  ],
+  "colors": [
+    { "name": "Noir", "bgColor": "bg-gray-900", "selectedColor": "ring-gray-900" },
+    { "name": "Rouge", "bgColor": "bg-red-600", "selectedColor": "ring-red-600" },
+    { "name": "Bleu", "bgColor": "bg-blue-600", "selectedColor": "ring-blue-600" },
+    { "name": "Jaune", "bgColor": "bg-yellow-400", "selectedColor": "ring-yellow-400" }
+  ],
+  "sizes": [
+    {
+      "crossdock": "0",
+      "label": "40.1/2",
+      "stockLabel": "C'est le dernier, dépêchez vous !",
+      "nostocksubtext": "Commandez en ligne, livré demain",
+      "stock": {"shops" : { "stock" : 0, "label" : "Epuisé" } },
+      "price": "170,00",
+      "productType": "1",
+      "isOnSale": "0",
+      "deliveryDate": "Chez vous <strong>dès samedi</strong> "
+    },
+    {
+      "crossdock": "0",
+      "label": "41",
+      "stockLabel": "Vite plus que 5 en stock !",
+      "nostocksubtext": "Commandez en ligne, livré demain",
+      "stock": {"shops" : { "stock" : 0, "label" : "Epuisé" } },
+      "price": "170,00",
+      "productType": "1",
+      "isOnSale": "0",
+      "deliveryDate": "Chez vous <strong>dès samedi</strong> "
+    },
+    {
+      "crossdock": "0",
+      "label": "42",
+      "stockLabel": "En stock",
+      "nostocksubtext": "Commandez en ligne, livré demain",
+      "stock": {"shops" : { "stock" : 0, "label" : "Epuisé" } },
+      "price": "170,00",
+      "productType": "1",
+      "isOnSale": "0",
+      "deliveryDate": "Chez vous <strong>dès samedi</strong> "
+    },
+    {
+      "crossdock": "0",
+      "label": "42.1/2",
+      "stockLabel": "En stock",
+      "nostocksubtext": "Commandez en ligne, livré demain",
+      "stock": {"shops" : { "stock" : 0, "label" : "Epuisé" } },
+      "price": "170,00",
+      "productType": "1",
+      "isOnSale": "0",
+      "deliveryDate": "Chez vous <strong>dès samedi</strong> "
+    },
+    {
+      "crossdock": "0",
+      "label": "43",
+      "stockLabel": "En stock",
+      "nostocksubtext": "Commandez en ligne, livré demain",
+      "stock": {"shops" : { "stock" : 0, "label" : "Epuisé" } },
+      "price": "170,00",
+      "productType": "1",
+      "isOnSale": "0",
+      "deliveryDate": "Chez vous <strong>dès samedi</strong> "
+    },
+    {
+      "crossdock": "0",
+      "label": "44",
+      "stockLabel": "En stock",
+      "nostocksubtext": "Commandez en ligne, livré demain",
+      "stock": {"shops" : { "stock" : 0, "label" : "Epuisé" } },
+      "price": "170,00",
+      "productType": "1",
+      "isOnSale": "0",
+      "deliveryDate": "Chez vous <strong>dès samedi</strong> "
+    },
+    {
+      "crossdock": "0",
+      "label": "44.1/2",
+      "stockLabel": "En stock",
+      "nostocksubtext": "Commandez en ligne, livré demain",
+      "stock": {"shops" : { "stock" : 0, "label" : "Epuisé" } },
+      "price": "170,00",
+      "productType": "1",
+      "isOnSale": "0",
+      "deliveryDate": "Chez vous <strong>dès samedi</strong> "
+    },
+    {
+      "crossdock": "0",
+      "label": "45",
+      "stockLabel": "En stock",
+      "nostocksubtext": "Commandez en ligne, livré demain",
+      "stock": {"shops" : { "stock" : 0, "label" : "Epuisé" } },
+      "price": "170,00",
+      "productType": "1",
+      "isOnSale": "0",
+      "deliveryDate": "Chez vous <strong>dès samedi</strong> "
+    },
+    {
+      "crossdock": "0",
+      "label": "45.1/2",
+      "stockLabel": "Vite plus que 3 en stock !",
+      "nostocksubtext": "Commandez en ligne, livré demain",
+      "stock": {"shops" : { "stock" : 0, "label" : "Epuisé" } },
+      "price": "170,00",
+      "productType": "1",
+      "isOnSale": "0",
+      "deliveryDate": "Chez vous <strong>dès samedi</strong> "
+    },
+    {
+      "crossdock": "0",
+      "label": "46",
+      "stockLabel": "Vite plus que 3 en stock !",
+      "nostocksubtext": "Commandez en ligne, livré demain",
+      "stock": {"shops" : { "stock" : 0, "label" : "Epuisé" } },
+      "price": "170,00",
+      "productType": "1",
+      "isOnSale": "0",
+      "deliveryDate": "Chez vous <strong>dès samedi</strong> "
+    },
+    {
+      "crossdock": "0",
+      "label": "46.1/2",
+      "stockLabel": "Vite plus que 2 en stock !",
+      "nostocksubtext": "Commandez en ligne, livré demain",
+      "stock": {"shops" : { "stock" : 0, "label" : "Epuisé" } },
+      "price": "170,00",
+      "productType": "1",
+      "isOnSale": "0",
+      "deliveryDate": "Chez vous <strong>dès samedi</strong> "
+    },
+    {
+      "crossdock": "0",
+      "label": "47.1/2",
+      "stockLabel": "C'est le dernier, dépêchez vous !",
+      "nostocksubtext": "Commandez en ligne, livré demain",
+      "stock": {"shops" : { "stock" : 0, "label" : "Epuisé" } },
+      "price": "170,00",
+      "productType": "1",
+      "isOnSale": "0",
+      "deliveryDate": "Chez vous <strong>dès samedi</strong> "
+    }
+  ],
+  "description": "Presque comme courir sur un nuage... Avec son supplément d'élasticité dans la tige et son amorti extra-doux sur toute sa longueur, cette chaussure de running pour hommes a le dernier mot en termes de confort.",
+  "details": [
+    "Tige en mesh 3D très respirant et très léger.",
+    "Montage en forme de chausson pour plus de confort.",
+    "Semelle intermédiaire Dna Loft pour un excellent amorti.",
+    "Encoche de flexion pour un bon déroulement du pied.",
+    "Type : Amorti Maximum",
+    "Drop : 10mm",
+    "Poids : 283 g"
+  ]
+}

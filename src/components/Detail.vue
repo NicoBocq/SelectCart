@@ -5,12 +5,12 @@
     <main class="mt-8 max-w-2xl mx-auto pb-16 px-4 sm:pb-24 sm:px-6 lg:max-w-7xl lg:px-8">
       <div class="lg:grid lg:grid-cols-12 lg:auto-rows-min lg:gap-x-8">
         <div class="lg:col-start-8 lg:col-span-5">
-          <div class="flex justify-between">
+          <div class="flex justify-between space-x-4">
             <h1 class="text-xl font-medium text-gray-900">
               {{ product.name }}
             </h1>
             <p class="text-xl font-medium text-gray-900">
-              {{ product.price }}
+              {{ formatPrice(product.price) }}
             </p>
           </div>
         </div>
@@ -88,7 +88,7 @@
                 v-model="cart.size"
                 :options="product.sizes"
                 label="Taille"
-                option-label="size"
+                option-label="label"
               >
                 <template #list-header>
                   Sélectionner votre pointure
@@ -96,9 +96,10 @@
                 <template
                   #option="{ option }"
                 >
-                  <select-item-size :item="option" />
+                  <option-item-size :item="option" />
                 </template>
               </n-select>
+              <select-parse />
             </div>
             <button
               type="submit"
@@ -140,98 +141,50 @@
 </template>
 
 <script>
-import { reactive } from 'vue'
+import { onMounted, reactive, ref } from 'vue'
 import {
   RadioGroup,
   RadioGroupLabel,
-  RadioGroupOption,
-  TransitionChild,
-  TransitionRoot
+  RadioGroupOption
 } from '@headlessui/vue'
 import NSelect from './ui/NSelect.vue'
-import NIcon from './ui/NIcon.vue'
-import SelectItemSize from './ui/SelectItemSize.vue'
-
-const product = {
-  name: 'CHAUSSURES DE RUNNING BROOKS RUNNING GLYCERIN 19 BLEU / JAUNE',
-  price: '170,00 €',
-  images: [
-    {
-      id: 1,
-      imageSrc: 'https://media.alltricks.com/hd/18891825fe253a9ded875.56031014.jpg',
-      imageAlt: 'CHAUSSURES DE RUNNING BROOKS RUNNING',
-      primary: true
-    },
-    {
-      id: 2,
-      imageSrc: 'https://media.alltricks.com/hd/18891825fe2538f2497d1.06306980.jpg',
-      imageAlt: 'CHAUSSURES DE RUNNING BROOKS RUNNING',
-      primary: false
-    },
-    {
-      id: 3,
-      imageSrc: 'https://media.alltricks.com/hd/18891825fe25389dbe913.14566111.jpg',
-      imageAlt: 'CHAUSSURES DE RUNNING BROOKS RUNNING',
-      primary: false
-    }
-  ],
-  colors: [
-    { name: 'Black', bgColor: 'bg-gray-900', selectedColor: 'ring-gray-900' },
-    { name: 'Heather Grey', bgColor: 'bg-gray-400', selectedColor: 'ring-gray-400' }
-  ],
-  sizes: [
-    { size: '40', stock: 1, price: '220,00 €' },
-    { size: '40.2/3', stock: 0, price: '220,00 €' },
-    { size: '41.1/3', stock: 5, price: '220,00 €' },
-    { size: '42', stock: 6, price: '220,00 €' },
-    { size: '42.2/3', stock: 10, price: '220,00 €' },
-    { size: '43.1/3', stock: 10, price: '220,00 €' },
-    { size: '44', stock: 10, price: '220,00 €' },
-    { size: '44.2/3', stock: 1, price: '220,00 €' },
-    { size: '45.1/3', stock: 10, price: '220,00 €' },
-    { size: '46', stock: 10, price: '220,00 €' },
-    { size: '46.2/3', stock: false, price: '220,00 €' },
-    { size: '47.1/3', stock: 10, price: '220,00 €' },
-    { size: '48', stock: 10, price: '220,00 €' },
-    { size: '49.1/3', stock: 10, price: '220,00 €' }
-  ],
-  description: 'Presque comme courir sur un nuage... Avec son supplément d\'élasticité dans la tige et son amorti extra-doux sur toute sa longueur, cette chaussure de running pour hommes a le dernier mot en termes de confort.',
-  details: [
-    'Tige en mesh 3D très respirant et très léger.',
-    'Montage en forme de chausson pour plus de confort.',
-    'Semelle intermédiaire Dna Loft pour un excellent amorti.',
-    'Encoche de flexion pour un bon déroulement du pied.',
-    'Type : Amorti Maximum',
-    'Drop : 10mm',
-    'Poids : 283 g'
-  ]
-}
-const reviews = {
-  average: 3.9,
-  totalCount: 512
-}
+import OptionItemSize from './ui/OptionItemSize.vue'
+import SelectParse from './ui/SelectParse.vue'
 
 export default {
   components: {
-    SelectItemSize,
+    SelectParse,
+    OptionItemSize,
     NSelect,
-    NIcon,
     RadioGroup,
     RadioGroupLabel,
-    RadioGroupOption,
-    TransitionChild,
-    TransitionRoot
+    RadioGroupOption
   },
   setup () {
     const cart = reactive({
       size: null,
       color: null
     })
+    const product = ref({})
+
+    const getProduct = () => {
+      import('../fixtures/product.json')
+        .then((response) => {
+          product.value = response
+        })
+    }
+
+    const formatPrice = (price) => {
+      return new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'EUR' }).format(price)
+    }
+    onMounted(() => {
+      getProduct()
+    })
 
     return {
       product,
-      reviews,
-      cart
+      cart,
+      formatPrice
     }
   }
 }
