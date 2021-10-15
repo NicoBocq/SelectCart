@@ -7,13 +7,14 @@
       {{ item.stockLabel }}
     </div>
     <div class="col-span-3 text-red-600 font-medium text-right">
-      {{ item.price }}
+      {{ formatPrice(item.price) }}
     </div>
     <div />
   </div>
 </template>
 
 <script>
+import { formatPrice } from '../../composable/format'
 
 export default {
   name: 'OptionItemSize',
@@ -29,6 +30,11 @@ export default {
     selected: {
       type: Boolean,
       default: false
+    }
+  },
+  setup () {
+    return {
+      formatPrice
     }
   }
 }

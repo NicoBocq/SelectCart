@@ -9,18 +9,16 @@
 
 <script>
 import {
-  CheckIcon,
   ChevronDownIcon,
-  StarIcon
+  RefreshIcon
 } from '@heroicons/vue/solid'
 
 import { computed, toRefs } from 'vue'
 export default {
   name: 'NIcon',
   components: {
-    CheckIcon,
     ChevronDownIcon,
-    StarIcon
+    RefreshIcon
   },
   props: {
     icon: {

@@ -83,12 +83,191 @@
                   Trouver ma taille
                 </a>
               </div>
-
+              <select
+                ref="selectRef"
+                data-choicepriceproductread=""
+                name="product_id"
+                required=""
+                data-label="Pointure"
+                class="hidden"
+              >
+                <option value="">
+                  Pointure
+                </option>
+                <option
+                  value="2037389"
+                  data-crossdock="0"
+                  data-label="40.1/2"
+                  data-stock-label="C'est le dernier, dépêchez vous !"
+                  data-nostocksubtext="Commandez en ligne, livré demain"
+                  data-stock="{'shops' : { 'stock' : 0, 'label' : 'Epuisé' } }"
+                  data-price="170,00"
+                  data-product-type="1"
+                  data-is-on-sale="0"
+                  data-delivery-date="Chez vous <strong>dès samedi</strong> "
+                >
+                  40.1/2
+                </option>
+                <option
+                  value="1840817"
+                  data-crossdock="0"
+                  data-label="41"
+                  data-stock-label="Vite plus que 5 en stock !"
+                  data-nostocksubtext="Commandez en ligne, livré demain"
+                  data-stock="{'shops' : { 'stock' : 0, 'label' : 'Epuisé' } }"
+                  data-price="170,00"
+                  data-product-type="1"
+                  data-is-on-sale="0"
+                  data-delivery-date="Chez vous <strong>dès samedi</strong> "
+                >
+                  41
+                </option>
+                <option
+                  value="1840105"
+                  data-crossdock="0"
+                  data-label="42"
+                  data-stock-label="En stock"
+                  data-nostocksubtext="Commandez en ligne, livré demain"
+                  data-stock="{'shops' : { 'stock' : 0, 'label' : 'Epuisé' } }"
+                  data-price="170,00"
+                  data-product-type="1"
+                  data-is-on-sale="0"
+                  data-delivery-date="Chez vous <strong>dès samedi</strong> "
+                >
+                  42
+                </option>
+                <option
+                  value="1840381"
+                  data-crossdock="0"
+                  data-label="42.1/2"
+                  data-stock-label="En stock"
+                  data-nostocksubtext="Commandez en ligne, livré demain"
+                  data-stock="{'shops' : { 'stock' : 0, 'label' : 'Epuisé' } }"
+                  data-price="170,00"
+                  data-product-type="1"
+                  data-is-on-sale="0"
+                  data-delivery-date="Chez vous <strong>dès samedi</strong> "
+                >
+                  42.1/2
+                </option>
+                <option
+                  value="1840204"
+                  data-crossdock="0"
+                  data-label="43"
+                  data-stock-label="En stock"
+                  data-nostocksubtext="Commandez en ligne, livré demain"
+                  data-stock="{'shops' : { 'stock' : 0, 'label' : 'Epuisé' } }"
+                  data-price="170,00"
+                  data-product-type="1"
+                  data-is-on-sale="0"
+                  data-delivery-date="Chez vous <strong>dès samedi</strong> "
+                >
+                  43
+                </option>
+                <option
+                  value="1840906"
+                  data-crossdock="0"
+                  data-label="44"
+                  data-stock-label="En stock"
+                  data-nostocksubtext="Commandez en ligne, livré demain"
+                  data-stock="{'shops' : { 'stock' : 0, 'label' : 'Epuisé' } }"
+                  data-price="170,00"
+                  data-product-type="1"
+                  data-is-on-sale="0"
+                  data-delivery-date="Chez vous <strong>dès samedi</strong> "
+                >
+                  44
+                </option>
+                <option
+                  value="1840340"
+                  data-crossdock="0"
+                  data-label="44.1/2"
+                  data-stock-label="En stock"
+                  data-nostocksubtext="Commandez en ligne, livré demain"
+                  data-stock="{'shops' : { 'stock' : 0, 'label' : 'Epuisé' } }"
+                  data-price="170,00"
+                  data-product-type="1"
+                  data-is-on-sale="0"
+                  data-delivery-date="Chez vous <strong>dès samedi</strong> "
+                >
+                  44.1/2
+                </option>
+                <option
+                  value="1840818"
+                  data-crossdock="0"
+                  data-label="45"
+                  data-stock-label="En stock"
+                  data-nostocksubtext="Commandez en ligne, livré demain"
+                  data-stock="{'shops' : { 'stock' : 0, 'label' : 'Epuisé' } }"
+                  data-price="170,00"
+                  data-product-type="1"
+                  data-is-on-sale="0"
+                  data-delivery-date="Chez vous <strong>dès samedi</strong> "
+                >
+                  45
+                </option>
+                <option
+                  value="1840925"
+                  data-crossdock="0"
+                  data-label="45.1/2"
+                  data-stock-label="Vite plus que 3 en stock !"
+                  data-nostocksubtext="Commandez en ligne, livré demain"
+                  data-stock="{'shops' : { 'stock' : 0, 'label' : 'Epuisé' } }"
+                  data-price="170,00"
+                  data-product-type="1"
+                  data-is-on-sale="0"
+                  data-delivery-date="Chez vous <strong>dès samedi</strong> "
+                >
+                  45.1/2
+                </option>
+                <option
+                  value="1840536"
+                  data-crossdock="0"
+                  data-label="46"
+                  data-stock-label="Vite plus que 3 en stock !"
+                  data-nostocksubtext="Commandez en ligne, livré demain"
+                  data-stock="{'shops' : { 'stock' : 0, 'label' : 'Epuisé' } }"
+                  data-price="170,00"
+                  data-product-type="1"
+                  data-is-on-sale="0"
+                  data-delivery-date="Chez vous <strong>dès samedi</strong> "
+                >
+                  46
+                </option>
+                <option
+                  value="1840075"
+                  data-crossdock="0"
+                  data-label="46.1/2"
+                  data-stock-label="Vite plus que 2 en stock !"
+                  data-nostocksubtext="Commandez en ligne, livré demain"
+                  data-stock="{'shops' : { 'stock' : 0, 'label' : 'Epuisé' } }"
+                  data-price="170,00"
+                  data-product-type="1"
+                  data-is-on-sale="0"
+                  data-delivery-date="Chez vous <strong>dès samedi</strong> "
+                >
+                  46.1/2
+                </option>
+                <option
+                  value="2037107"
+                  data-crossdock="0"
+                  data-label="47.1/2"
+                  data-stock-label="C'est le dernier, dépêchez vous !"
+                  data-nostocksubtext="Commandez en ligne, livré demain"
+                  data-stock="{'shops' : { 'stock' : 0, 'label' : 'Epuisé' } }"
+                  data-price="170,00"
+                  data-product-type="1"
+                  data-is-on-sale="0"
+                  data-delivery-date="Chez vous <strong>dès samedi</strong> "
+                >
+                  47.1/2
+                </option>
+              </select>
               <n-select
                 v-model="cart.size"
-                :options="product.sizes"
-                label="Taille"
+                :options="options"
                 option-label="label"
+                label="Taille"
               >
                 <template #list-header>
                   Sélectionner votre pointure
@@ -99,7 +278,6 @@
                   <option-item-size :item="option" />
                 </template>
               </n-select>
-              <select-parse />
             </div>
             <button
               type="submit"
@@ -149,11 +327,10 @@ import {
 } from '@headlessui/vue'
 import NSelect from './ui/NSelect.vue'
 import OptionItemSize from './ui/OptionItemSize.vue'
-import SelectParse from './ui/SelectParse.vue'
+import { formatPrice } from '../composable/format'
 
 export default {
   components: {
-    SelectParse,
     OptionItemSize,
     NSelect,
     RadioGroup,
@@ -166,6 +343,8 @@ export default {
       color: null
     })
     const product = ref({})
+    const selectRef = ref(null)
+    const options = ref([])
 
     const getProduct = () => {
       import('../fixtures/product.json')
@@ -174,17 +353,30 @@ export default {
         })
     }
 
-    const formatPrice = (price) => {
-      return new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'EUR' }).format(price)
+    const getOptionsDataSet = () => {
+      const arrayOptions = [...selectRef.value.options]
+      for (const item of arrayOptions) {
+        if (item.dataset.label) {
+          options.value.push(JSON.parse(JSON.stringify({
+            ...item.dataset,
+            price: parseFloat(item.dataset.price)
+          })))
+        }
+      }
+      console.log(options.value)
     }
+
     onMounted(() => {
       getProduct()
+      getOptionsDataSet()
     })
 
     return {
       product,
       cart,
-      formatPrice
+      formatPrice,
+      selectRef,
+      options
     }
   }
 }

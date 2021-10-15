@@ -38,7 +38,9 @@
             v-if="hasSlot('list-header')"
             key="list-header"
           >
-            <slot name="listHeader" />
+            <li class="py-2 px-3 text-gray-500 border-b border-gray-200">
+              <slot name="list-header" />
+            </li>
           </listbox-option>
           <ListboxOption
             v-for="(option, index) in options"
@@ -47,7 +49,7 @@
             as="template"
             :value="option"
           >
-            <li :class="[active ? 'text-white bg-yellow-500' : 'text-gray-900', 'cursor-default select-none relative py-2 pl-3 pr-9']">
+            <li :class="[active ? 'bg-gray-200' : 'text-gray-900', 'cursor-default select-none relative py-2 px-3']">
               <slot
                 v-if="hasSlot('option')"
                 :option="option"
@@ -56,16 +58,6 @@
               <span v-else>
                 {{ getOptionLabel(option) }}
               </span>
-              <!--              <span-->
-              <!--                v-if="selected"-->
-              <!--                :class="[active ? 'text-white' : 'text-opacity-50', 'absolute text-gray-400 inset-y-0 right-0 flex items-center pr-4']"-->
-              <!--              >-->
-              <!--                <n-icon-->
-              <!--                  :icon="selectedIcon"-->
-              <!--                  aria-hidden="true"-->
-              <!--                  class="text-white"-->
-              <!--                />-->
-              <!--              </span>-->
             </li>
           </ListboxOption>
         </ListboxOptions>
@@ -75,9 +67,10 @@
 </template>
 
 <script>
-import { computed, toRefs } from 'vue'
+import { toRefs } from 'vue'
 import { Listbox, ListboxButton, ListboxLabel, ListboxOption, ListboxOptions } from '@headlessui/vue'
 import NIcon from './NIcon.vue'
+import { useModelWrapper } from '../../composable/modelWrapper'
 
 export default {
   name: 'NSelect',
@@ -116,13 +109,10 @@ export default {
   },
   emits: ['update:modelValue', 'updateOnOpen'],
   setup (props, { slots, emit }) {
-    const { optionLabel, modelValue } = toRefs(props)
+    const { optionLabel } = toRefs(props)
     const hasSlot = (name) => !!slots[name]
 
-    const selected = computed({
-      get: () => modelValue.value,
-      set: (value) => emit('update:modelValue', value)
-    })
+    const selected = useModelWrapper(props, emit)
 
     const getOptionLabel = (option) => {
       if (typeof option === 'object') {
