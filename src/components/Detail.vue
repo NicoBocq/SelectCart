@@ -363,7 +363,6 @@ export default {
           })))
         }
       }
-      console.log(options.value)
     }
 
     onMounted(() => {
